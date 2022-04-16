@@ -24,11 +24,11 @@
     "start": "npx sandbox"
   },
   "devDependencies": {
-    "@architect/architect": "^10.0.0",
+    "@architect/architect": "^10.2.2",
     "@architect/sandbox": "",
     "@begin/data": "^4.0.0"
   },
   "dependencies": {
-    "@architect/functions": "^4.0.0"
+    "@architect/functions": "^5.0.5"
   }
 }

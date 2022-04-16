@@ -1,8 +1,8 @@
-module.exports = function Styles (props) {
-  props = props || {}
-  let image = props.image || ''
+module.exports = function Styles( props ) {
+	props = props || {}
+	let image = props.image || ''
 
-  return `
+	return `
 <style>
 * {
   margin: 0;
@@ -28,7 +28,7 @@ body {
   display: inline-flex;
 }
 .background-image {
-  background-image: url(${image});
+  background-image: url(${ image });
 }
 .background-size-cover {
   background-size: cover;
@@ -162,6 +162,7 @@ body {
 .color-2DA6FF {
   color: #2DA6FF;
 }
+.color-white,
 .color-FFFFFF {
   color: #FFFFFF;
 }
@@ -170,6 +171,9 @@ body {
 }
 .color-hover-058AEA:hover {
   color: #058AEA;
+}
+.background-color-dark {
+	background-color: #121212;
 }
 .background-color-979797 {
   background-color: #979797;
