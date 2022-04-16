@@ -1,2 +1,0 @@
-# lamentable-boson
-Begin app
