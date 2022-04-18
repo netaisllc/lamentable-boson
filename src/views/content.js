@@ -1,23 +1,23 @@
-const LargeHeading = require('./heading-large')
-const MediumHeading = require('./heading-medium')
-const LocationLink = require('./link-location')
-const MailLink = require('./link-mail')
-const SocialMedia = require('./social-media')
-const Icon = require('./icon')
+const LargeHeading = require( './heading-large' )
+const MediumHeading = require( './heading-medium' )
+const LocationLink = require( './link-location' )
+const MailLink = require( './link-mail' )
+const SocialMedia = require( './social-media' )
+const Icon = require( './icon' )
 
-module.exports = function Content (props) {
-  props = props || {}
-  let fullname = props.fullname || ''
-  let occupation = props.occupation || ''
-  let location = props.location || ''
-  let bio = props.bio || ''
-  let email = props.email || ''
-  let twitter = props.twitter || ''
-  let linkedin = props.linkedin || ''
-  let instagram = props.instagram || ''
-  let facebook = props.facebook || ''
+module.exports = function Content( props ) {
+	props = props || {}
+	let fullname = props.fullname || ''
+	let occupation = props.occupation || ''
+	let location = props.location || ''
+	let bio = props.bio || ''
+	let email = props.email || ''
+	let twitter = props.twitter || ''
+	let linkedin = props.linkedin || ''
+	let instagram = props.instagram || ''
+	let facebook = props.facebook || ''
 
-  return `
+	return `
 <section
   class="
     display-flex
@@ -47,23 +47,23 @@ module.exports = function Content (props) {
         margin-left-auto
       "
     >
-      ${LargeHeading({
-        children: fullname
-      })}
-      ${MediumHeading({
-        children: occupation
-      })}
-      ${LocationLink({
-        location
-      })}
+      ${ LargeHeading( {
+		children: fullname
+	} ) }
+      ${ MediumHeading( {
+		children: occupation
+	} ) }
+      ${ LocationLink( {
+		location
+	} ) }
       <p
         class="
           margin-bottom-42
           font-size-16
-          color-383D3B
+          color-979797
         "
       >
-        ${bio}
+        ${ bio }
       </p>
       <div
         class="
@@ -74,15 +74,15 @@ module.exports = function Content (props) {
           margin-bottom-16
         "
       >
-        ${MailLink({
-          email
-        })}
-        ${SocialMedia({
-          twitter,
-          linkedin,
-          instagram,
-          facebook
-        })}
+        ${ MailLink( {
+		email
+	} ) }
+        ${ SocialMedia( {
+		twitter,
+		linkedin,
+		instagram,
+		facebook
+	} ) }
       </div>
     </div>
   </div>
@@ -125,11 +125,11 @@ module.exports = function Content (props) {
         target="_blank"
         rel="noopener"
       >
-        ${Icon({
-          class: 'fill-inherit',
-          href: 'begin',
-          style: 'width:4rem;height:1.2725rem;'
-        })}
+        ${ Icon( {
+		class: 'fill-inherit',
+		href: 'begin',
+		style: 'width:4rem;height:1.2725rem;'
+	} ) }
       </a>
     </span>
     <a
